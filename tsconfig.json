@@ -1,5 +1,6 @@
 {
 	"compilerOptions": {
+		// these "types are for Jest
 		"types": ["jest", "@testing-library/jest-dom"],
 		"moduleResolution": "node",
 		"module": "es2020",

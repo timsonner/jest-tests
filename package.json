@@ -37,6 +37,9 @@
     "unocss": "^0.22.0"
   },
   "jest": {
+    "setupFilesAfterEnv": [
+      "<rootDir>/testSetupFile.ts"
+    ],
     "testEnvironment": "jsdom",
     "transform": {
       "^.+\\.svelte$": [
@@ -46,7 +49,8 @@
         }
       ],
       "^.+\\.ts$": "ts-jest",
-      "^.+\\.js$": "babel-jest"
+      "^.+\\.js$": "babel-jest",
+      ".+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2)$": "jest-transform-stub"
     },
     "moduleFileExtensions": [
       "js",
@@ -57,6 +61,7 @@
   "type": "module",
   "dependencies": {
     "@babel/preset-env": "^7.16.7",
-    "babel-jest": "^27.4.6"
+    "babel-jest": "^27.4.6",
+    "jest-transform-stub": "^2.0.0"
   }
 }
