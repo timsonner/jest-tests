@@ -5,10 +5,12 @@ import preprocess from 'svelte-preprocess';
 import UnoCss from 'unocss/vite'
 import { extractorSvelte } from '@unocss/core'
 
+
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	// Consult https://github.com/sveltejs/svelte-preprocess
 	// for more information about preprocessors
+	
 	preprocess: preprocess(),
 
 	kit: {
