@@ -1,11 +1,17 @@
-# Clone the repo, cd into the project directory, then run:
+# About
+01/09/2022  
+
+A Svelte skeleton project with Jest setup, ready to start testing with Typescript support for test files. Jsdom is the default testing environment.  
+
+
+## Clone the repo, cd into the project directory, then run:
 
 ```bash
 npm install
 
 npm run dev 
 ```
-# To run a Jest test use:
+## To run a Jest test use:
 ```bash
 npm test
 ```
